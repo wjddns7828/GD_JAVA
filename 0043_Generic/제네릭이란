@@ -1,0 +1,56 @@
+Generic : 
+
+클래스 내부에서 사용 할 데이터의 타입을 외부에서 인스턴스하여 사용 할 때 확정 하는 것을 말함 
+
+제네릭은 다른 데이터의 유형으로 동작 할 수 있는 메소드
+클래스 및 인터페이스는 정의하는 방법을 제공하여 유형 매개변수(parameter)의 사용을 나타냄
+
+제네릭의 이점
+컴파일 타입 형식의 안정성을 확보 할 수 있다.
+	형 변환이 필요가 없는 코드가 작성 가능하다.
+
+
+Ex) <<=기존 방식
+ 테스트 클래스
+	public class Test(){ 
+		public String test;
+	}
+
+메인 메소드
+	Test t1 = new Test();
+		t1.test ="남궁성";
+		
+Ex2) << 변경된 방식
+ 테스트 클래스
+	public class Test<T>{ 
+		public T test;
+	}
+
+메인 메소드
+	Test<String> t2 = new Test<String>();
+	t2.test = "문자"; << 가능
+	Test<Integer> t3 = new Test<Integer>();
+	t3.test = 1; << 가능
+	
+제네릭의 명명법
+<E> - Element : 맴버필드와 같은 요소의 타입 선언
+<N> - Number :  숫자인 정수와 실수의 타입선언
+<K,V> - Key,Value : 입력 할 때 두개 입력하여 타입을 선언 {"Key"."Value"}
+S
+U
+2nd
+
+public class Hashmap<K,V> extends AbstractMap<K,V>{
+
+
+}
+
+
+
+
+
+
+
+
+	
+	

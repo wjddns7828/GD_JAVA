@@ -1,0 +1,11 @@
+Escape 문자
+
+\n NewLine//줄 바꿈
+\t horizontal Tabl //가로탭
+\b backspace
+\r carriage return
+\u FFFFUnicode // 16진수 유니코드 / 헥사넘버
+\f from feed
+\' single quota
+\" dobule quota
+\\ blackslash
